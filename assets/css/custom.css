@@ -596,6 +596,7 @@ input[type="number"] {
   font-size: 16px;
   line-height: 25px;
   color: rgba(98, 98, 98, 0.6);
+  margin-bottom: 0;
 }
 
 .footer-section .social-media {
