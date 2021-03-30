@@ -808,12 +808,12 @@ input[type="number"] {
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  .footer-section .order-sm-1 {
+  .footer-section .order-custom-1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .footer-section .order-sm-2 {
+  .footer-section .order-custom-2 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
