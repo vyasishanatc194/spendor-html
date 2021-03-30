@@ -294,14 +294,14 @@ input[type="number"] {
 
 /*############################## Home section ###############################*/
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .form-group label {
-  font-size: 18px;
-  color: #181818;
+  font-size: 14px;
+  color: #484848;
   letter-spacing: 0;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -310,10 +310,12 @@ input[type="number"] {
   height: 50px;
   background-color: #ffffff;
   border-radius: 7px;
-  font-size: 18px;
+  font-size: 16px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  padding: 12px 15px;
   outline: 0;
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .form-group .form-control:focus {
@@ -568,6 +570,33 @@ input[type="number"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.middle-section .authorized-section {
+  padding: 110px 0;
+  background-color: #FAFAFA;
+}
+
+.middle-section .authorized-section .content h2 {
+  font-size: 32px;
+  line-height: 36px;
+  color: #484848;
+  font-family: "Georgia Regular";
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.middle-section .authorized-section .content .login-group .btn-green {
+  background-color: #84BA63;
+  color: #fff;
+  padding: 11px 20px;
+  max-width: 213px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-section {
