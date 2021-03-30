@@ -370,7 +370,6 @@ input[type="number"] {
   height: auto;
   padding-top: 80px;
 
-
   .search-seaction {
     padding: 130px 0;
     background-color: #fafafa;
@@ -576,6 +575,7 @@ input[type="number"] {
       }
     }
   }
+
 }
 
 .footer-section {
@@ -632,8 +632,6 @@ input[type="number"] {
     }
   }
 
- 
-
 }
 
 .closebtn img {
@@ -650,6 +648,16 @@ input[type="number"] {
 }
 
 @media (max-width: 767px) {
+
+  .btn.btn-primary {
+    height: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 15px 36px !important;
+  }
+
+  // 
 
   .header {
 
@@ -817,7 +825,104 @@ input[type="number"] {
 
   /* middle section start here */
 
+.middle-section {
+  .search-seaction {
+    padding: 60px 0;
 
+    .serach-content {
+      h1 {
+        font-size: 26px;
+        line-height: 29px;
+      }
+
+      .form-group {
+        .input-group-text {
+          height: 60px;
+          width: 60px;
+        }
+
+        .form-control {
+          height: 60px;
+          padding-left: 60px;
+          font-size: 16px;
+        }
+      }
+
+      .search-link {
+        a {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+    }
+
+  }
+
+  .feature-section {
+    padding: 50px 0;
+
+    .heading {
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .featured-card {
+      .featured-img {
+       margin-bottom: 20px;
+
+        img {
+          height: 240px;
+        }
+
+      }
+
+      h3 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 5px;
+      }
+
+      a.card-link {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+  }
+
+  .featured-buisness {
+    padding: 60px 0;
+
+    .buisness-card {
+      .b-card-img {
+        a {
+          img {
+            height: 240px;
+          }
+        }
+      }
+
+      .b-card-body {
+        padding: 20px 15px;
+        
+        h3 {
+          font-size: 16px;
+          line-height: 16px;
+          margin-bottom: 10px;
+        }
+
+        a {
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+    }
+    
+  }
+}
 
 .footer-section {
 
@@ -889,6 +994,11 @@ input[type="number"] {
               line-height: 26px;
               padding: 8px 12px;
               font-weight: 500;
+            }
+
+            .bottom-link {
+              position: unset !important;
+              padding-left: 12px !important;
             }
           }
           padding-bottom: 30px;
@@ -972,10 +1082,15 @@ input[type="number"] {
           .nav-item {
 
             .nav-link {
-              font-size: 12px;
+              font-size: 18px;
               line-height: 22x;
               padding: 8px 10px;
               font-weight: 500;
+            }
+
+            .bottom-link {
+              position: absolute !important;
+              padding-left: 12px !important;
             }
           }
         }
