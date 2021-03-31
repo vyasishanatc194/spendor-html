@@ -239,6 +239,7 @@ input[type="number"] {
 
         .nav-item {
           position: relative;
+
           .nav-link {
             color: #2E2E2E;
             font-size: 18px;
@@ -271,6 +272,10 @@ input[type="number"] {
             a {
               color: #84BA63;
               font-weight: 800;
+
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -364,6 +369,11 @@ input[type="number"] {
   display: block;
   max-width: 272px;
   border-radius: 0 !important;
+  
+  &:hover {
+    border-color: #84BA63 !important;
+    color: #84BA63;
+  }
 }
 
 /*  middle section start here */
@@ -390,6 +400,8 @@ input[type="number"] {
         letter-spacing: 0;
         font-weight: 600;
       }
+
+    
 
       .form-group {
         margin-bottom: 20px;
@@ -432,6 +444,10 @@ input[type="number"] {
           text-decoration: underline;
           font-size: 19px;
           line-height: 30px;
+          
+          &:hover {
+            color: #84BA63;
+          }
         }
       }
 
@@ -583,6 +599,22 @@ input[type="number"] {
     padding: 110px 0;
     background-color: #FAFAFA;
 
+    .forgot-content {
+      h2 {
+        margin-bottom: 10px !important;
+      }
+    }
+
+    .forgot-text {
+      p{
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: rgba(46,46,46,0.50);
+        letter-spacing: 0;
+        line-height: 26px;
+      }
+    }
+
     .content {
     
       h2 {
@@ -590,12 +622,29 @@ input[type="number"] {
         line-height: 36px;
         color: #484848;
         font-family: $georigia;
-        font-weight: 600;
+        font-weight: 700;
         margin-bottom: 50px;
+        letter-spacing: 0.8px;
       }
 
+      .form-group {
+        margin-bottom: 20px;
+
+      }
 
       .login-group {
+        padding-top: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .btn {
+          margin-right: 10px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
 
         .btn-green {
           background-color: #84BA63;
@@ -604,9 +653,47 @@ input[type="number"] {
           max-width: 213px;
           display: flex;
           align-items: center;
+          text-align: center;
+          justify-content: center;
+          font-size: 18px;
+          color: #FFFFFF;
+          text-align: center;
+          line-height: 25px;
+          font-weight: 600;
+          width: 100%;
+        }
+
+        .btn-green-outline {
+          font-size: 18px;
+          color: #84BA63;
+          text-align: center;
+          padding: 11px 20px;
+          line-height: 25px;
+          font-weight: 700;
         }
 
       }
+
+      hr {
+        margin: 30px 0;
+        color: #EBEBEB;
+      }
+
+     .form-bootm-text {
+       p {
+        font-size: 18px;
+        color: rgba(-2147483648,-2147483648,-2147483648,0.40);
+        line-height: 25px;
+        font-weight: 400;
+
+        .form-link {
+          color: #84BA63;
+          text-decoration: underline;
+        }
+
+       }
+     }
+
     }
 
   
@@ -662,7 +749,7 @@ input[type="number"] {
           color: #A9A9A9;
 
           &:hover {
-            color: #000;
+            color: #84BA63;
           }
         }
       }
@@ -889,6 +976,7 @@ input[type="number"] {
         a {
           font-size: 16px;
           line-height: 26px;
+
         }
       }
     }

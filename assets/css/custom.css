@@ -279,6 +279,10 @@ input[type="number"] {
   font-weight: 800;
 }
 
+.header .navbar .collapse1 .navbar-nav .nav-item .bottom-link a:hover {
+  text-decoration: underline;
+}
+
 .header .navbar .collapse1 .navbar-nav .nav-btn .nav-link {
   font-size: 16px;
   min-height: 30px;
@@ -357,6 +361,11 @@ input[type="number"] {
   border-radius: 0 !important;
 }
 
+.btn.btn-primary:hover {
+  border-color: #84BA63 !important;
+  color: #84BA63;
+}
+
 /*  middle section start here */
 .middle-section {
   height: auto;
@@ -432,6 +441,10 @@ input[type="number"] {
   text-decoration: underline;
   font-size: 19px;
   line-height: 30px;
+}
+
+.middle-section .search-seaction .serach-content .search-link a:hover {
+  color: #84BA63;
 }
 
 .middle-section .search-seaction .serach-content .bulb-icon a img {
@@ -577,13 +590,51 @@ input[type="number"] {
   background-color: #FAFAFA;
 }
 
+.middle-section .authorized-section .forgot-content h2 {
+  margin-bottom: 10px !important;
+}
+
+.middle-section .authorized-section .forgot-text p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: rgba(46, 46, 46, 0.5);
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
 .middle-section .authorized-section .content h2 {
   font-size: 32px;
   line-height: 36px;
   color: #484848;
   font-family: "Georgia Regular";
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 50px;
+  letter-spacing: 0.8px;
+}
+
+.middle-section .authorized-section .content .form-group {
+  margin-bottom: 20px;
+}
+
+.middle-section .authorized-section .content .login-group {
+  padding-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.middle-section .authorized-section .content .login-group .btn {
+  margin-right: 10px;
+}
+
+.middle-section .authorized-section .content .login-group .btn:last-child {
+  margin-right: 0;
 }
 
 .middle-section .authorized-section .content .login-group .btn-green {
@@ -597,6 +648,42 @@ input[type="number"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.middle-section .authorized-section .content .login-group .btn-green-outline {
+  font-size: 18px;
+  color: #84BA63;
+  text-align: center;
+  padding: 11px 20px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.middle-section .authorized-section .content hr {
+  margin: 30px 0;
+  color: #EBEBEB;
+}
+
+.middle-section .authorized-section .content .form-bootm-text p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.middle-section .authorized-section .content .form-bootm-text p .form-link {
+  color: #84BA63;
+  text-decoration: underline;
 }
 
 .footer-section {
@@ -658,7 +745,7 @@ input[type="number"] {
 }
 
 .footer-section .social-media ul li a:hover {
-  color: #000;
+  color: #84BA63;
 }
 
 .closebtn img {
