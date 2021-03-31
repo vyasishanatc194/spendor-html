@@ -18,7 +18,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#84BA63">
   <!-- Responsive END -->
-  <title> Home | Spendor </title>
+  <title> Search result | Spendor </title>
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
   <!-- Bootstrap core CSS -->
@@ -76,7 +76,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <div class="serach-content">
+                <!-- <div class="serach-content">
                   <h1>What are you buying today?</h1>
 
                   <div class="input-group form-group">
@@ -105,7 +105,81 @@
                     </div>
                   </div>
 
+                </div> -->
+              
+                <div class="serach-result-content">
+                  <h1>What’s most important to you?</h1>
+
+                  <div class="shop-box-group">
+                    <div class="shop-box dropright">
+                      <a href="#!" class="shop-circle circle-1 active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>
+                          <img src="assets/images/img-1.svg"  alt="">
+                        </span>
+                      </a>
+
+                      <div class="dropdown-menu dropdown-custom">
+                        <h3>Categories</h3>
+                        
+                        <div class="checklist">
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label" for="customCheck">Female Owners</label>
+                          </div>
+
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label" for="customCheck">LGBT* Owners</label>
+                          </div>
+
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label" for="customCheck">Black, Asian, or Minority ethnic owners</label>
+                          </div>
+
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label" for="customCheck">Disabled Owners</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <a href="" class="shop-link">Minority-Owned <i class="icon-arrow"></i></a>
+                    </div>
+
+                    <div class="shop-box dropright">
+                      <a href="#!" class="shop-circle circle-2 active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>
+                          <img src="assets/images/img-2.svg"  alt="">
+                        </span>
+                      </a>
+                     
+                      <a href="" class="shop-link">Shop Local <i class="icon-arrow"></i></a>
+                    </div>
+
+                    <div class="shop-box dropright">
+                      <a href="#!" class="shop-circle circle-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>
+                          <img src="assets/images/img-3.svg"  alt="">
+                        </span>
+                      </a>
+
+                   
+                      <a href="" class="shop-link">Sustainable <i class="icon-arrow"></i></a>
+                    </div>
+
+                  </div>
+
+                  <div class="div-go">
+                    <a href="#!" class="btn btn-go">Go > </a>
+                  </div>
+
+                  <div class="div-go-second">
+                    <p>I don't mind, just show me something different</p> <a href="#!" class="btn btn-go">Go > </a>
+                  </div>
+
                 </div>
+
               </div>
             </div>
           </div>
@@ -359,6 +433,16 @@
   <script src="assets/js/owl.carousel.js"></script>
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.shop-circle').click(function(){
+        $(this).toggleClass('active');
+      });
+    });
+
+  
+  </script>
 
 </body>
 
