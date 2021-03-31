@@ -123,24 +123,26 @@
                         
                         <div class="checklist">
                           <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                            <label class="custom-control-label" for="customCheck">Female Owners</label>
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
+                            <label class="custom-control-label" for="customCheck1">Female Owners</label>
                           </div>
 
                           <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                            <label class="custom-control-label" for="customCheck">LGBT* Owners</label>
+                            <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                            <label class="custom-control-label" for="customCheck2">LGBT* Owners</label>
                           </div>
 
                           <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                            <label class="custom-control-label" for="customCheck">Black, Asian, or Minority ethnic owners</label>
+                            <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
+                            <label class="custom-control-label" for="customCheck3">Black, Asian, or Minority ethnic owners</label>
                           </div>
 
                           <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                            <label class="custom-control-label" for="customCheck">Disabled Owners</label>
+                            <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">
+                            <label class="custom-control-label" for="customCheck4">Disabled Owners</label>
                           </div>
+                          <div class="dropdown-divider"></div>
+                          <p class="text-drop-down"><span class="mr-3">*</span>including gender nonconforming owners</p>
                         </div>
                       </div>
 
@@ -153,6 +155,34 @@
                           <img src="assets/images/img-2.svg"  alt="">
                         </span>
                       </a>
+
+                      <div class="dropdown-menu dropdown-custom">
+                        <h3>Categories</h3>
+                        
+                        <div class="checklist">
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck12" name="example1">
+                            <label class="custom-control-label" for="customCheck12">Female Owners</label>
+                          </div>
+
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck22" name="example1">
+                            <label class="custom-control-label" for="customCheck22">LGBT* Owners</label>
+                          </div>
+
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck32" name="example1">
+                            <label class="custom-control-label" for="customCheck32">Black, Asian, or Minority ethnic owners</label>
+                          </div>
+
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck42" name="example1">
+                            <label class="custom-control-label" for="customCheck42">Disabled Owners</label>
+                          </div>
+                          <div class="dropdown-divider"></div>
+                          <p class="text-drop-down"><span class="mr-3">*</span>including gender nonconforming owners</p>
+                        </div>
+                      </div>
                      
                       <a href="" class="shop-link">Shop Local <i class="icon-arrow"></i></a>
                     </div>
@@ -163,7 +193,33 @@
                           <img src="assets/images/img-3.svg"  alt="">
                         </span>
                       </a>
+                      <div class="dropdown-menu dropdown-custom">
+                        <h3>Categories</h3>
+                        
+                        <div class="checklist">
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck13" name="example1">
+                            <label class="custom-control-label" for="customCheck13">Female Owners</label>
+                          </div>
 
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck23" name="example1">
+                            <label class="custom-control-label" for="customCheck23">LGBT* Owners</label>
+                          </div>
+
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck33" name="example1">
+                            <label class="custom-control-label" for="customCheck33">Black, Asian, or Minority ethnic owners</label>
+                          </div>
+
+                          <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck44" name="example1">
+                            <label class="custom-control-label" for="customCheck44">Disabled Owners</label>
+                          </div>
+                          <div class="dropdown-divider"></div>
+                          <p class="text-drop-down"><span class="mr-3">*</span>including gender nonconforming owners</p>
+                        </div>
+                      </div>
                    
                       <a href="" class="shop-link">Sustainable <i class="icon-arrow"></i></a>
                     </div>
@@ -439,6 +495,13 @@
       $('.shop-circle').click(function(){
         $(this).toggleClass('active');
       });
+
+      
+
+      $('.dropdown-menu.dropdown-custom').on('click', function(event){
+      event.stopPropagation();
+
+    });
     });
 
   
