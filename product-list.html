@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="generator" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <!-- responsive -->
+  <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+  <meta name="theme-color" content="#84BA63">
+  <meta name="msapplication-navbutton-color" content="#84BA63">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#84BA63">
+  <!-- Responsive END -->
+  <title> Product list | Spendor </title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="assets/css/select2.min.css" rel="stylesheet">
+  <link href="assets/css/switch.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <header class="header">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark ">
+      <div class="container-fluid ">
+        <div class="row row-100 col-header">
+          <div class="col-lg-3 col-12 col-30">
+            <a class="navbar-brand smoth-scroll" href="index.html"><img src="assets/images/logo.png" alt="" /></a>
+          </div>
+          <div class="col-lg-9 col-12 col-70">
+            <button class="navbar-toggler" onclick="openNav2()" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse1 navbar-collapse sidenav-new-menu nav-full-menu" id="mySidenav2">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"><img
+                  src="assets/images/close-menu.png" alt="" /></a>
+              <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item d-none">
+                  <a class="nav-link smoth-scroll" href="#">Business Login
+                  </a>
+                  <span class="bottom-link"><a href="#">Click here</a> to register</span>
+                </li>
+                <li class="nav-item d-none">
+                  <a class="nav-link smoth-scroll active" href="#">My Profile</a>
+                </li> 
+
+                <li class="nav-item ">
+
+                  <div class="dropdown dropdown-user">
+                    <a href="#" data-toggle="dropdown" data-caret="false" class="user-profile" aria-expanded="false">
+                      <span class="avtar">
+                        <img src="assets/images/user.jpg" alt="">
+                      </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                  
+                      <ul>
+                        <li>
+                          <a class="dropdown-item  py-2" href="profile.html">
+                            Change Password
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item  py-2" href="login.html">
+                            Logout
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </li> 
+              </ul>
+
+              
+            </div>
+            
+        
+
+            <div id="cd-shadow-layer" onclick="closeNav2()" style="display: none;"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main role="main" class="middle-section">
+    <div class="middle-inner">
+
+      <section class="product-list-section">
+        <div class="prodcut-list-inner">  
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="heading">
+                    <h3>Products List</h3>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+
+              <div class="prodcut-search-header">
+     
+                    <div class="search-bar">
+                      <div class="form-group mb-0">
+                        <span class="icon-search">
+                          <a href="#!"><img src="assets/images/serach.svg" alt=""></a>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search a Product">
+                      </div>
+                    </div>
+                 
+                    <div class="add-group">
+                      <a href="#!" class="btn btn-csv">Add CSV</a>
+                      <a href="#!" class="btn btn-add">+Add</a>
+                    </div>
+              
+               
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="product-item">
+                <div class="product-input">
+                  <div class="form-group">
+                    <input type="text" class="form-control" value="Product 1">
+                  </div>
+                </div>
+                <div class="product-action">
+                    <a href="#!" class="btn btn-edit"><i class="fas fa-pen"></i></a>
+                    <a href="#!" class="btn btn-delete"><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="product-item">
+                <div class="product-input">
+                  <div class="form-group">
+                    <input type="text" class="form-control" value="Product 1">
+                  </div>
+                </div>
+                <div class="product-action">
+                    <a href="#!" class="btn btn-edit"><i class="fas fa-pen"></i></a>
+                    <a href="#!" class="btn btn-delete"><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="product-item">
+                <div class="product-input">
+                  <div class="form-group">
+                    <input type="text" class="form-control" value="Product 1">
+                  </div>
+                </div>
+                <div class="product-action">
+                    <a href="#!" class="btn btn-edit"><i class="fas fa-pen"></i></a>
+                    <a href="#!" class="btn btn-delete"><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="product-item">
+                <div class="product-input">
+                  <div class="form-group">
+                    <input type="text" class="form-control" value="Product 1">
+                  </div>
+                </div>
+                <div class="product-action">
+                    <a href="#!" class="btn btn-edit"><i class="fas fa-pen"></i></a>
+                    <a href="#!" class="btn btn-delete"><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12">
+              <div class="product-item">
+                <div class="product-input">
+                  <div class="form-group">
+                    <input type="text" class="form-control" value="Product 1">
+                  </div>
+                </div>
+                <div class="product-action">
+                    <a href="#!" class="btn btn-edit"><i class="fas fa-pen"></i></a>
+                    <a href="#!" class="btn btn-delete"><i class="far fa-trash-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          </div>
+        </div>
+      </section>
+    
+
+    </div>
+  </main>
+
+  <!-- <footer class="footer-section mt-auto wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s" data-wow-offset="5">
+    <div class="footer-inner">
+      <div class="container">
+        <div class="row justify-content-center ">
+          <div class="col-lg-11">
+            <div class="inner-div-footer">
+              <div class="row ">
+                <div class="col-lg-3 col-md-3">
+                  <a href="#!" class="footer-logo">
+                    <img src="assets/images/logo.png" alt="">
+                  </a>
+                </div>
+                <div class="col-lg-6 col-md-6 order-custom-2">
+                  <div class="copyright-text">
+                    <p>Copyright©Spendor, 2020. All rights reserved</p>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-3 col-md-3 order-custom-1">
+                  <div class="social-media">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i class="fab fa-facebook-square"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fab fa-tiktok"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    
+      </div>
+    </div>
+
+  </footer> -->
+
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+
+      var readURL = function(input) {
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+              $('.profile-pic').attr('src', e.target.result);
+          }
+
+          reader.readAsDataURL(input.files[0]);
+      }
+      }
+
+
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+
+    $(".upload-button").on('click', function() {
+      $(".file-upload").click();
+    });
+
+
+      $('.shop-circle').click(function(){
+        $(this).toggleClass('active');
+      });
+
+      
+
+      $('.dropdown-menu.dropdown-custom').on('click', function(event){
+      event.stopPropagation();
+      });
+
+
+      $(".select2").select2({
+            // placeholder: "",
+            minimumResultsForSearch: -1
+      });
+
+
+      
+    
+
+
+    });
+
+  
+  </script>
+
+</body>
+
+</html>
