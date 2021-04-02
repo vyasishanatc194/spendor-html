@@ -325,7 +325,7 @@ input[type="number"] {
     box-shadow: none;
     padding: 12px 15px;
     outline: 0;
-    color: rgba(0, 0, 0, 0.10);
+    color: #000;
     
     &:focus {
       border-color: #000000 !important;
@@ -1689,8 +1689,6 @@ input[type="number"] {
           }
         }
       }
-
-
 
       .all-rating-content {
         h3 {
