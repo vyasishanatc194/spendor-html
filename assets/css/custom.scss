@@ -354,7 +354,9 @@ input[type="number"] {
       line-height: 24px;
       color: #071C2E;
       font-weight: 400;
- 
+      &:active {
+        background-color: #fafafa;
+      }
     }
   }
 }

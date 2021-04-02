@@ -344,6 +344,10 @@ input[type="number"] {
   font-weight: 400;
 }
 
+.dropdown-user .dropdown-menu a:active {
+  background-color: #fafafa;
+}
+
 .sidenav-new-menu .closebtn {
   display: none;
 }
