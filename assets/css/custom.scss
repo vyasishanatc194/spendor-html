@@ -7,7 +7,7 @@
 @import url("../fonts/muli/muli.css");
 @import url("../fonts/georgia/style.css");
 
-$georigia: "Georgia Regular";
+$georigia: "Georgia Bold";
 
 body {
   background-color: #fafafa;
@@ -375,7 +375,7 @@ input[type="number"] {
     font-size: 14px;
     color: #484848;
     letter-spacing: 0;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
   }
 
@@ -385,14 +385,21 @@ input[type="number"] {
     background-color: #ffffff;
     border-radius: 7px;
     font-size: 16px;
+    font-weight: 600;
     box-shadow: none;
     padding: 12px 15px;
     outline: 0;
-    color: #000;
+    color: #000000;
     
+    &::placeholder {
+      color: rgba(0, 0, 0,0.2);
+      font-weight: 600;
+    }
+
     &:focus {
       border-color: #000000 !important;
       color: #000000;
+      font-weight: 600;
     }
   }
 }
@@ -482,7 +489,7 @@ input[type="number"] {
           font-size: 19px;
           line-height: 30px;
           color: #767676; 
-          padding-left: 100px;
+          padding-left: 80px;
           border-color: rgba(0, 0, 0,0.10);
           border-radius: 7px !important;
         }
@@ -502,7 +509,7 @@ input[type="number"] {
 
           i {
             font-size: 24px;
-            color: #000;
+            color: #767676;
           }
         }
       }
@@ -586,6 +593,25 @@ input[type="number"] {
         font-family: $georigia;
         letter-spacing: 0;
         font-weight: 600;
+
+        span {
+          display: inline-block;
+          position: relative;
+
+            &::after{
+              content: '';
+              position: absolute;
+              left: 0;
+              right: 0;
+              display: block;
+              bottom: 0px;
+              height: 5px;
+              border-radius: 5px;
+              width: 100%;
+              background-color: #84BA63;;
+            
+          }
+        }
       }
 
       .shop-box-group {
@@ -849,7 +875,7 @@ input[type="number"] {
       }
 
       h3 {
-        font-size: 22px;
+        font-size: 21px;
         line-height: 25px;
         font-family: $georigia;
         margin-bottom: 16px;  
@@ -892,6 +918,18 @@ input[type="number"] {
     padding: 110px 0;
     background-color: #FAFAFA;
 
+    .heading {
+      h2 {
+        font-size: 30px;
+        line-height: 46px;
+        color: #000;
+        font-family: $georigia;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 65px;
+      }
+    }
+
     .buisness-card {
       background-color: #FFFFFF;
       box-shadow: 0 12px 34px rgba(0, 0, 0, 0.03);
@@ -920,12 +958,13 @@ input[type="number"] {
         }
 
         a {
-          font-size: 30px;
+          font-size: 30.8px;
           line-height: 35px;
           color: #84BA63;
           font-weight: 600;
           font-family: $georigia;
           display: block;
+          text-decoration: none;
         }
         
       }
@@ -1239,6 +1278,7 @@ input[type="number"] {
 
           a {
             color: inherit;
+            text-decoration: none;
           }
         }
         p {
@@ -1556,6 +1596,7 @@ input[type="number"] {
         color: #2E2E2E;
         text-align: center;
         margin-bottom: 18px;
+        font-weight: 400;
       }
 
       .social-links {
@@ -1835,9 +1876,56 @@ input[type="number"] {
       }
   }
 
+  .btn-csv {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box !important;
+    line-height: 40px !important;
+    max-width: 98%;
+  }
 
   .prfile-section {
     padding: 70px 0;
+
+    .bootstrap-tagsinput {
+      width: 100%;
+      border: 1px solid rgba(114, 114, 114, 0.3);
+      border-radius: 0;
+      min-height: 60px;
+      font-size: 20px;
+      line-height: 26px;
+      padding: 6px 12px;
+  }
+  .bootstrap-tagsinput input{
+      padding: 10px 20px;
+      margin: 0;
+      min-height: 35px;
+      color: #979797;
+      background: white;
+      border: 0px solid rgba(151, 151, 151, 0.2);
+      // box-shadow: 0 3px 3px 0 rgba(203, 203, 203, 0.1);
+      border-radius: 6px;
+      transition: all 0.8s;
+      padding: 10px;
+  }
+  .bootstrap-tagsinput .tag {
+      background-color: #E7E7E7;
+      padding: 5px 10px;
+      border-radius: 0px;
+      color: #2E2E2E;
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 5px;
+      span{
+  
+          padding:  0 4px;
+          display: inline-block;
+      }
+  
+  }
 
     .content {
       margin-bottom: 80px;
@@ -1864,7 +1952,7 @@ input[type="number"] {
         margin-bottom: 20px;
 
         label {
-          font-size: 16px;
+          font-size: 18px;
           line-height: 23px;
           color: #727272;
           margin-bottom: 15px;
@@ -2457,7 +2545,7 @@ input[type="number"] {
       align-items: center;
       justify-content: center;
       color: #000 !important;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important;
       span {
       display: flex;
       align-items: center;
@@ -2784,10 +2872,17 @@ input[type="number"] {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 20px;
+    text-align: left;
+    justify-content: flex-start;
   
     i {
       font-size: 20px;
     }
+  }
+
+  .middle-section .prfile-section .bootstrap-tagsinput input {
+    font-size: 16px;
+    line-height: 26px;
   }
 
 .middle-section {
@@ -2851,6 +2946,9 @@ input[type="number"] {
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 30px;
+
+        
+      
       }
 
       .shop-box-group {
@@ -2953,6 +3051,14 @@ input[type="number"] {
 
   .featured-buisness {
     padding: 60px 0;
+
+    .heading {
+      h2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+    }
 
     .buisness-card {
       .b-card-img {
@@ -3077,6 +3183,7 @@ input[type="number"] {
 
           a {
             color: inherit;
+          
           }
         }
 
@@ -3731,10 +3838,29 @@ input[type="number"] {
 
       }
     }
+
+    .search-seaction {
+      padding: 80px 0;
+
+    }
+
+    .feature-section {
+      padding: 80px 0;
+    }
+
+    .featured-buisness {
+      padding: 80px 0;
+    }
   }
 
   .footer-section .social-media ul li {
-    margin: 0 15px;
+    margin: 0 10px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1240px) {
+  .footer-section .social-media ul li {
+    margin: 0 10px !important;
   }
 }
 

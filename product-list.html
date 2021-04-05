@@ -127,8 +127,8 @@
                     </div>
                  
                     <div class="add-group">
-                      <label for="upload" class="btn btn-csv mb-0">Add CSV</label>
-                      <input type="file" class="btn btn-csv d-none" id="upload">
+                      <label for="upload" class="btn btn-csv mb-0" >Add CSV</label>
+                      <input type="file" class="btn d-none" id="upload">
                       
                       <a href="#!" class="btn btn-add">+Add</a>
                     </div>
@@ -329,7 +329,11 @@
 
 
       
-    
+      $('#upload').change(function() {
+      var i = $(this).prev('label').clone();
+      var file = $('#upload')[0].files[0].name;
+      $(this).prev('label').text(file);
+    });
 
 
     });

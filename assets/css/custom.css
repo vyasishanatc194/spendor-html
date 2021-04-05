@@ -361,7 +361,7 @@ input[type="number"] {
   font-size: 14px;
   color: #484848;
   letter-spacing: 0;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -371,16 +371,38 @@ input[type="number"] {
   background-color: #ffffff;
   border-radius: 7px;
   font-size: 16px;
+  font-weight: 600;
   -webkit-box-shadow: none;
           box-shadow: none;
   padding: 12px 15px;
   outline: 0;
-  color: #000;
+  color: #000000;
+}
+
+.form-group .form-control::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+.form-group .form-control:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+.form-group .form-control::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+.form-group .form-control::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
 }
 
 .form-group .form-control:focus {
   border-color: #000000 !important;
   color: #000000;
+  font-weight: 600;
 }
 
 .input-group .input-group-addon {
@@ -459,7 +481,7 @@ input[type="number"] {
   line-height: 61px;
   color: #2E2E2E;
   margin-bottom: 55px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   letter-spacing: 0;
   font-weight: 600;
 }
@@ -473,7 +495,7 @@ input[type="number"] {
   font-size: 19px;
   line-height: 30px;
   color: #767676;
-  padding-left: 100px;
+  padding-left: 80px;
   border-color: rgba(0, 0, 0, 0.1);
   border-radius: 7px !important;
 }
@@ -500,7 +522,7 @@ input[type="number"] {
 
 .middle-section .search-seaction .serach-content .form-group .input-group-text i {
   font-size: 24px;
-  color: #000;
+  color: #767676;
 }
 
 .middle-section .search-seaction .serach-content .search-link {
@@ -587,9 +609,27 @@ input[type="number"] {
   line-height: 61px;
   color: #2E2E2E;
   margin-bottom: 55px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   letter-spacing: 0;
   font-weight: 600;
+}
+
+.middle-section .search-seaction .serach-result-content h1 span {
+  display: inline-block;
+  position: relative;
+}
+
+.middle-section .search-seaction .serach-result-content h1 span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  bottom: 0px;
+  height: 5px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #84BA63;
 }
 
 .middle-section .search-seaction .serach-result-content .shop-box-group {
@@ -685,7 +725,7 @@ input[type="number"] {
           justify-content: center;
   white-space: nowrap;
   margin-top: 20px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   color: #2E2E2E;
   font-size: 16px;
   line-height: 19px;
@@ -870,7 +910,7 @@ input[type="number"] {
   font-size: 30px;
   line-height: 46px;
   color: #000;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   font-weight: 600;
   text-align: center;
   margin-bottom: 65px;
@@ -896,16 +936,16 @@ input[type="number"] {
 }
 
 .middle-section .feature-section .featured-card h3 {
-  font-size: 22px;
+  font-size: 21px;
   line-height: 25px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   margin-bottom: 16px;
 }
 
 .middle-section .feature-section .featured-card a.card-link {
   font-size: 22px;
   line-height: 22px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,6 +984,16 @@ input[type="number"] {
   background-color: #FAFAFA;
 }
 
+.middle-section .featured-buisness .heading h2 {
+  font-size: 30px;
+  line-height: 46px;
+  color: #000;
+  font-family: "Georgia Bold";
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
 .middle-section .featured-buisness .buisness-card {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 12px 34px rgba(0, 0, 0, 0.03);
@@ -969,16 +1019,17 @@ input[type="number"] {
 .middle-section .featured-buisness .buisness-card .b-card-body h3 {
   font-size: 22px;
   margin-bottom: 5px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
 }
 
 .middle-section .featured-buisness .buisness-card .b-card-body a {
-  font-size: 30px;
+  font-size: 30.8px;
   line-height: 35px;
   color: #84BA63;
   font-weight: 600;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   display: block;
+  text-decoration: none;
 }
 
 .middle-section .featured-buisness .browse-div {
@@ -1016,7 +1067,7 @@ input[type="number"] {
   font-size: 32px;
   line-height: 36px;
   color: #484848;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   font-weight: 700;
   margin-bottom: 50px;
   letter-spacing: 0.8px;
@@ -1299,11 +1350,12 @@ input[type="number"] {
   line-height: 21px;
   letter-spacing: 0;
   margin-bottom: 7px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
 }
 
 .middle-section .lisitng-section .buisness-box .buisness-body h3 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .middle-section .lisitng-section .buisness-box .buisness-body p {
@@ -1399,7 +1451,7 @@ input[type="number"] {
   line-height: 46px;
   color: #2E2E2E;
   font-weight: 700;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   margin-bottom: 15px;
 }
 
@@ -1610,7 +1662,7 @@ input[type="number"] {
   font-size: 22px;
   line-height: 46px;
   color: #2E2E2E;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   font-weight: 600;
   margin-bottom: 51px;
 }
@@ -1644,6 +1696,7 @@ input[type="number"] {
   color: #2E2E2E;
   text-align: center;
   margin-bottom: 18px;
+  font-weight: 400;
 }
 
 .middle-section .founder-section .founder-box .social-links {
@@ -1683,7 +1736,7 @@ input[type="number"] {
   font-size: 22px;
   line-height: 46px;
   color: #2E2E2E;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   font-weight: 600;
   margin-bottom: 51px;
 }
@@ -1755,7 +1808,7 @@ input[type="number"] {
   font-size: 22px;
   line-height: 46px;
   color: #2E2E2E;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   font-weight: 600;
   margin-bottom: 37px;
 }
@@ -1807,7 +1860,7 @@ input[type="number"] {
   font-size: 22px;
   line-height: 46px;
   color: #2E2E2E;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   font-weight: 600;
   margin-bottom: 51px;
 }
@@ -1954,8 +2007,57 @@ input[type="number"] {
   text-decoration: underline;
 }
 
+.middle-section .btn-csv {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box !important;
+  line-height: 40px !important;
+  max-width: 98%;
+}
+
 .middle-section .prfile-section {
   padding: 70px 0;
+}
+
+.middle-section .prfile-section .bootstrap-tagsinput {
+  width: 100%;
+  border: 1px solid rgba(114, 114, 114, 0.3);
+  border-radius: 0;
+  min-height: 60px;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 6px 12px;
+}
+
+.middle-section .prfile-section .bootstrap-tagsinput input {
+  padding: 10px 20px;
+  margin: 0;
+  min-height: 35px;
+  color: #979797;
+  background: white;
+  border: 0px solid rgba(151, 151, 151, 0.2);
+  border-radius: 6px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  padding: 10px;
+}
+
+.middle-section .prfile-section .bootstrap-tagsinput .tag {
+  background-color: #E7E7E7;
+  padding: 5px 10px;
+  border-radius: 0px;
+  color: #2E2E2E;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.middle-section .prfile-section .bootstrap-tagsinput .tag span {
+  padding: 0 4px;
+  display: inline-block;
 }
 
 .middle-section .prfile-section .content {
@@ -1967,7 +2069,7 @@ input[type="number"] {
   color: #84BA63;
   letter-spacing: 0;
   margin-bottom: 20px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
 }
 
 .middle-section .prfile-section .content p {
@@ -1983,7 +2085,7 @@ input[type="number"] {
 }
 
 .middle-section .prfile-section .form-profile .form-group label {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23px;
   color: #727272;
   margin-bottom: 15px;
@@ -2097,7 +2199,7 @@ input[type="number"] {
   color: #484848;
   letter-spacing: 0;
   line-height: 36px;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   margin-bottom: 40px;
 }
 
@@ -2439,7 +2541,7 @@ input[type="number"] {
   line-height: 26px;
   color: #2E2E2E;
   font-weight: 700;
-  font-family: "Georgia Regular";
+  font-family: "Georgia Bold";
   margin-bottom: 35px;
 }
 
@@ -2679,8 +2781,8 @@ input[type="number"] {
       -ms-flex-pack: center;
           justify-content: center;
   color: #000 !important;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important;
 }
 
 .middle-section .pagination .btn-circle span {
@@ -3014,9 +3116,17 @@ input[type="number"] {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 20px;
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .alert-review i, .alert-approved i {
     font-size: 20px;
+  }
+  .middle-section .prfile-section .bootstrap-tagsinput input {
+    font-size: 16px;
+    line-height: 26px;
   }
   .middle-section .search-seaction {
     padding: 60px 0;
@@ -3142,6 +3252,11 @@ input[type="number"] {
   }
   .middle-section .featured-buisness {
     padding: 60px 0;
+  }
+  .middle-section .featured-buisness .heading h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
   .middle-section .featured-buisness .buisness-card .b-card-img a img {
     height: 240px;
@@ -3713,8 +3828,23 @@ input[type="number"] {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .middle-section .search-seaction {
+    padding: 80px 0;
+  }
+  .middle-section .feature-section {
+    padding: 80px 0;
+  }
+  .middle-section .featured-buisness {
+    padding: 80px 0;
+  }
   .footer-section .social-media ul li {
-    margin: 0 15px;
+    margin: 0 10px !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1240px) {
+  .footer-section .social-media ul li {
+    margin: 0 10px !important;
   }
 }
 
